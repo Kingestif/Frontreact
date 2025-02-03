@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Container1{
+    background-color: #1F2937;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.Header{
+    /* background-color: red; */
+
+    /* The Below 4 e/ts are the CORE */
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    margin: 0 auto;     /*Centers Main part*/
+}
+
+.lastones{
+    /* background-color: purple; */
+
+    display: flex;
+    gap: 5em;
+    color: #b0afaf;
+}
+
+#logo{
+    font-weight:bold;
+    font-size: 1.2em;
+}
+
+.Hero{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;    
+    margin-top: 90px;
+}
+
+.Hero-right{
+    width: 35em;
+    height: 15em;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero-left{
+    /* background-color: blue; */
+
+    width: 25em;
+}
+
+#Hero-text1{
+    font-size: 3em;
+    font-weight:bold;
+    margin-bottom: 5px;
+}
+
+#Hero-text2{
+    color: #b0afaf; 
+    margin-bottom: 30px;
+}
+
+#Hero-button{
+    padding: 1%;
+    width: 7em;
+    height: 2.5em;
+    text-align: center;
+    background-color: #3383F6;
+    color: white;
+    border-radius: 10%;
+    font-weight: bold;
+    border: none;
+}
+
+
+.body2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; 
+    margin: 0 auto;   
+    margin-top: 30px;
+}
+
+.body2-box{
+    /* background-color: red; */
+
+    width: 6em;
+    height: 6em;
+    border: 3px solid #3383f6;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.body2-boxes{
+    display: flex;
+    gap: 10em;
+}
+
+.main-box{
+    width: 6em;
+    text-align: center;
+}
+
+.main-box div:nth-child(2){
+    color: rgb(39, 38, 38);
+}
+
+.body2-text{
+    color: black;
+    font-weight: bolder;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+a{
+    color: unset;       
+    text-decoration: none;
+}
+
+
+

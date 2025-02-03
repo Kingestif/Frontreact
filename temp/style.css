@@ -1,0 +1,39 @@
+.button{
+    color: red;
+    background-color: yellow;
+    height: 22px;
+    width: 100px;
+}
+
+.inside{
+    background-color: red;
+    margin: 5px;
+    width: 50px;
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    /* box-sizing: border-box; */
+}
+
+.box{
+    width: 600px;
+    height: 400px;
+    background-color: blue;
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-around;  /*align horizontally*/
+    align-items: flex-end;  /*align vertically*/
+    flex-wrap: wrap;        /*if no available space it wraps below*/
+    /* gap: 5em; */         /*add gaps between elements*/
+}
+
+
+#finalbox{
+    flex-grow: 1;       /*make e/t fill available space*/
+    flex-shrink: 0;     /*when size decrease this e/t shrink much less than the others*/
+    /* flex-basis: 5px;    overrite this e/ts size like width previously declared */
+    /* flex: 1;        makes ALL DIVS grow evenly if declared globally (MOSTLY USED) */
+
+    /* order: -1;          make this e/t appear first */
+    /* align-self: center;     overrite above rules for specific e/t */
+}
