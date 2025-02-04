@@ -20,7 +20,7 @@
     height: 400px;
     background-color: blue;
     display: flex;
-    flex-direction: flex;
+    /* flex-direction: column; */
     justify-content: space-around;  /*align horizontally*/
     align-items: flex-end;  /*align vertically*/
     flex-wrap: wrap;        /*if no available space it wraps below*/

@@ -88,6 +88,7 @@
     width: 80%; 
     margin: 0 auto;   
     margin-top: 30px;
+    padding: 30px 0 100px 0;
 }
 
 .body2-box{
@@ -103,6 +104,7 @@
 .body2-boxes{
     display: flex;
     gap: 10em;
+    flex-wrap: wrap;
 }
 
 .main-box{
@@ -126,5 +128,74 @@ a{
     text-decoration: none;
 }
 
+.body3{
+    background-color: #1F2937;
+    color: #dddddd;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
 
+.body3-quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.8em;
+    font-weight: lighter;
+}
+.body3 div i{
+    margin-bottom: 20px;
+}
+.body3 div p{
+    color: #b0afaf;
+    align-self: flex-end;
+    font-size: 0.8em;
+}
+
+.body4{
+    width: 80%;
+    background-color: #3383f6;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.body4-box{
+    padding: 5em;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.body4-box button{
+    width: 10em;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.body4-box-text div:nth-child(1){
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+}
+
+.body4-box-text div:nth-child(2){
+    color: #d0d0d0;
+}
+
+
+.body5{
+    background-color: #1F2937;
+    color: #d0d0d0;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    padding: 2em;
+}
 
