@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import React from 'react'
 
 function Message(){
     var array = ["Cat","Dog", "Rat"];
@@ -18,7 +19,6 @@ export function Button({text="Click me", color="green"}){
     const buttonStyle = {
         color: color,
     }
-
 
     return <button style={buttonStyle}>{text}</button>
 }
@@ -60,6 +60,45 @@ export function ToggleButton(){
     return <button onClick = {() => setToggle(prevToggle => !prevToggle)} style={ButtonStyle}>Toggle</button>
 }
 
+// Project2 CV application
+export function Form(){
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        console.log("prevented");
+    }
+
+    return(
+        <>
+            <p>General Information</p>
+            <form onSubmit={handleSubmit}>
+                <input type="text" placeholder="full name" name="fname"/><br/>
+                <input type="email" placeholder="email" name="email"/><br/>
+                <input type="text" placeholder="phone number" name="pnumber"/><br/>
+                <input type="text" placeholder="school name" name="scname"/><br/>
+                <input type="text" placeholder="job" name="job"/><br/>
+                <input type="text" placeholder="company name" name="cpname"/><br/>
+                <button>Submit</button><br/><br/>
+            </form>
+        </>
+    )
+}
+
+// Reusable Button(using Props but more Typescriptlike and also funciton passing)
+interface Props{
+    children: string;
+    onclick: () => void;   
+    bkcolor: string;
+    color: string;
+}
+
+export function BossButton({children, onclick, bkcolor, color}: Props){
+    const ButtonStyle = {
+        backgroundColor: bkcolor,
+        color: color,
+    }
+
+    return <button style = {ButtonStyle} onClick ={onclick}>{children}</button>
+}
 
 
 export default Message;
