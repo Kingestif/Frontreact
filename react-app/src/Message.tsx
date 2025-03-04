@@ -33,6 +33,8 @@ export function NewButton(){
 }
 
 //4. States
+// Note: in this case we move bottom up state is created on the components and use by app.tsx so each button have its own state updated independently
+// But if we want both created buttons share state we go Top bottom, create the state on the app.tsf file then use them on this button
 export function Counter(){
     const [count, setCount] = useState(0);      //intialzie count with 0
 

@@ -1,6 +1,5 @@
 import Message, {Button, NewButton, Counter, ToggleButton, Form, BossButton} from "./Message";    //use brace for button bc its named export not default export like Message
 
-
 function Display(){
   return (
     <>
